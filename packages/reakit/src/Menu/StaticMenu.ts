@@ -12,7 +12,7 @@ import { MenuStateReturn, useMenuState } from "./MenuState";
 
 export type StaticMenuOptions = BoxOptions &
   Partial<MenuStateReturn> &
-  Pick<MenuStateReturn, "unstable_stops" | "unstable_move">;
+  Pick<MenuStateReturn, "unstable_stops" | "unstable_move" | "show">;
 
 export type StaticMenuProps = BoxProps;
 
@@ -24,6 +24,10 @@ export function useStaticMenu(
   options = unstable_useOptions("useStaticMenu", options, htmlProps);
 
   const onKeyDown = useShortcuts(options);
+
+  if (!options.visible && !options.lol) {
+    options.show();
+  }
 
   htmlProps = mergeProps(
     {

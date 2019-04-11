@@ -14,6 +14,8 @@ export type MenuItemOptions = RoverOptions &
 
 export type MenuItemProps = RoverProps;
 
+const count = 0;
+
 export function useMenuItem(
   options: MenuItemOptions,
   { children, onKeyDown, ...htmlProps }: MenuItemProps = {}
@@ -21,6 +23,7 @@ export function useMenuItem(
   const parent = React.useContext(MenuContext);
   const ref = React.useRef<HTMLElement>(null);
   options = unstable_useOptions("useMenuItem", options, htmlProps);
+  // console.log(++count);
 
   const providerValue = React.useMemo(
     () => ({
@@ -124,6 +127,17 @@ const keys: Keys<MenuItemOptions> = [
 ];
 
 useMenuItem.__keys = keys;
+
+useMenuItem.__propsAreEqual = (
+  prev: MenuItemOptions,
+  next: MenuItemOptions
+) => {
+  if (!prev.visible && !next.visible) {
+    return true;
+  }
+  // return useRover.__propsAreEqual(prev, next);
+  return false;
+};
 
 export const MenuItem = unstable_createComponent({
   as: "button",

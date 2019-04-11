@@ -82,7 +82,9 @@ const Menu1 = React.forwardRef((props, ref) => {
       <Menu {...menu}>
         <MenuItem {...menu}>Jkl</MenuItem>
         <MenuItem {...menu}>Jkld</MenuItem>
-        <MenuItem {...menu}>Mno</MenuItem>
+        <MenuItem {...menu} disabled>
+          Mno
+        </MenuItem>
         <MenuItemRadio {...menu} name="language" value="html">
           HTML
         </MenuItemRadio>
