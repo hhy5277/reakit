@@ -92,3 +92,94 @@ function Example() {
   );
 }
 ```
+
+## Props
+
+<!-- This generated automatically -->
+
+### `usePopoverState`
+
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`placement`** | `default.Placement` | Actual `placement`. |
+| **`unstable_flip`** | `boolean | undefined` | Whether or not flip the popover. |
+| **`unstable_shift`** | `boolean | undefined` | Whether or not shift the popover. |
+| **`unstable_gutter`** | `number | undefined` | Offset between the reference and the popover. |
+
+### `Popover`
+
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`modal`** | `boolean | undefined` | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is<br>trapped within the dialog. |
+| **`hideOnEsc`** | `boolean | undefined` | When enabled, user can hide the dialog by pressing `Escape`. |
+| **`hideOnClickOutside`** | `boolean | undefined` | When enabled, user can hide the dialog by clicking outside it. |
+| **`preventBodyScroll`** | `boolean | undefined` | When enabled, user can't scroll on body when the dialog is visible.<br>This option doesn't work if the dialog isn't modal. |
+| **`unstable_initialFocusRef`** | `React.RefObject<HTMLElement> | undefined` | The element that will be focused when the dialog shows.<br>When not set, the first tabbable element within the dialog will be used.<br>`autoFocusOnShow` disables it. |
+| **`unstable_finalFocusRef`** | `React.RefObject<HTMLElement> | undefined` | The element that will be focused when the dialog hides.<br>When not set, the disclosure component will be used.<br>`autoFocusOnHide` disables it. |
+| **`unstable_referenceRef`** | `React.RefObject<HTMLElement | null>` | The reference element. |
+| **`unstable_popoverRef`** | `React.RefObject<HTMLElement | null>` | The popover element. |
+| **`unstable_arrowRef`** | `React.RefObject<HTMLElement | null>` | The arrow element. |
+| **`unstable_popoverStyles`** | `Partial<CSSStyleDeclaration>` | Popover styles. |
+| **`unstable_arrowStyles`** | `Partial<CSSStyleDeclaration>` | Arrow styles. |
+| **`unstable_originalPlacement`** | `default.Placement` | `placement` passed to the hook. |
+| **`placement`** | `default.Placement` | Actual `placement`. |
+| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |
+
+### `PopoverArrow`
+
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`unstable_referenceRef`** | `React.RefObject<HTMLElement | null>` | The reference element. |
+| **`unstable_popoverRef`** | `React.RefObject<HTMLElement | null>` | The popover element. |
+| **`unstable_arrowRef`** | `React.RefObject<HTMLElement | null>` | The arrow element. |
+| **`unstable_popoverStyles`** | `Partial<CSSStyleDeclaration>` | Popover styles. |
+| **`unstable_arrowStyles`** | `Partial<CSSStyleDeclaration>` | Arrow styles. |
+| **`unstable_originalPlacement`** | `default.Placement` | `placement` passed to the hook. |
+| **`placement`** | `default.Placement` | Actual `placement`. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |
+
+### `PopoverBackdrop`
+
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`unstable_referenceRef`** | `React.RefObject<HTMLElement | null>` | The reference element. |
+| **`unstable_popoverRef`** | `React.RefObject<HTMLElement | null>` | The popover element. |
+| **`unstable_arrowRef`** | `React.RefObject<HTMLElement | null>` | The arrow element. |
+| **`unstable_popoverStyles`** | `Partial<CSSStyleDeclaration>` | Popover styles. |
+| **`unstable_arrowStyles`** | `Partial<CSSStyleDeclaration>` | Arrow styles. |
+| **`unstable_originalPlacement`** | `default.Placement` | `placement` passed to the hook. |
+| **`placement`** | `default.Placement` | Actual `placement`. |
+| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |
+
+### `PopoverDisclosure`
+
+| Name | Type | Description |
+|------|------|-------------|
+| **`disabled`** | `boolean | undefined` | Same as the HTML attribute. |
+| **`unstable_focusable`** | `boolean | undefined` | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_clickKeys`** | `string[] | undefined` | Keyboard keys to trigger click. |
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`unstable_referenceRef`** | `React.RefObject<HTMLElement | null>` | The reference element. |
+| **`unstable_popoverRef`** | `React.RefObject<HTMLElement | null>` | The popover element. |
+| **`unstable_arrowRef`** | `React.RefObject<HTMLElement | null>` | The arrow element. |
+| **`unstable_popoverStyles`** | `Partial<CSSStyleDeclaration>` | Popover styles. |
+| **`unstable_arrowStyles`** | `Partial<CSSStyleDeclaration>` | Arrow styles. |
+| **`unstable_originalPlacement`** | `default.Placement` | `placement` passed to the hook. |
+| **`placement`** | `default.Placement` | Actual `placement`. |
+| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |

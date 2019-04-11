@@ -27,23 +27,19 @@ export type DialogOptions = HiddenOptions &
      *  - Non-modal: `preventBodyScroll` doesn't work and focus is free.
      *  - Modal: `preventBodyScroll` is automatically enabled and focus is
      * trapped within the dialog.
-     * @default true
      */
     modal?: boolean;
     /**
      * When enabled, user can hide the dialog by pressing `Escape`.
-     * @default true
      */
     hideOnEsc?: boolean;
     /**
      * When enabled, user can hide the dialog by clicking outside it.
-     * @default true
      */
     hideOnClickOutside?: boolean;
     /**
      * When enabled, user can't scroll on body when the dialog is visible.
      * This option doesn't work if the dialog isn't modal.
-     * @default true
      */
     preventBodyScroll?: boolean;
     /**
@@ -60,12 +56,12 @@ export type DialogOptions = HiddenOptions &
     unstable_finalFocusRef?: React.RefObject<HTMLElement>;
     /**
      * Whether or not to move focus when the dialog shows.
-     * @default true
+     * @private
      */
     unstable_autoFocusOnShow?: boolean;
     /**
      * Whether or not to move focus when the dialog hides.
-     * @default true
+     * @private
      */
     unstable_autoFocusOnHide?: boolean;
   };

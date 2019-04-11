@@ -36,3 +36,11 @@ function Example() {
   return <Box>Box</Box>;
 }
 ```
+
+## Props
+
+<!-- This generated automatically -->
+
+### `Box`
+
+No props to show

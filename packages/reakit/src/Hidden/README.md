@@ -40,50 +40,33 @@ function Example() {
 return <Example />;
 ```
 
-## API
+## Props
+
+<!-- This generated automatically -->
 
 ### `useHiddenState`
 
-```ts static
-type HiddenStateOptions = {
-  /** @default false */
-  visible?: boolean;
-};
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
 
-type HiddenState = {
-  visible: boolean;
-  show: () => void;
-  hide: () => void;
-  toggle: () => void;
-};
+### `Hidden`
 
-function useHiddenState(options?: HiddenStateOptions): HiddenState;
-```
+| Name | Type | Description |
+|------|------|-------------|
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |
 
-### `useHidden`
+### `HiddenDisclosure`
 
-```ts static
-type UseHiddenOptions = UseBoxOptions & HiddenStateOptions;
-
-export function useHidden(
-  options: UseHiddenOptions = {},
-  props: React.HTMLAttributes<any> & React.RefAttributes<any> = {}
-```
-
-```ts static
-type HiddenState = {
-  visible: boolean;
-  show: () => void;
-  hide: () => void;
-  toggle: () => void;
-};
-
-type Hidden = Box & {
-  visible: boolean;
-  hide: () => void;
-};
-
-type HiddenToggle = Box & {
-  toggle: () => void;
-};
-```
+| Name | Type | Description |
+|------|------|-------------|
+| **`disabled`** | `boolean | undefined` | Same as the HTML attribute. |
+| **`unstable_focusable`** | `boolean | undefined` | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_clickKeys`** | `string[] | undefined` | Keyboard keys to trigger click. |
+| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`show`** | `() => void` | Changes the `visible` state to `true` |
+| **`hide`** | `() => void` | Changes the `visible` state to `false` |
+| **`toggle`** | `() => void` | Toggles the `visible` state |

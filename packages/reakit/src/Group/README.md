@@ -22,3 +22,11 @@ function Example() {
   );
 }
 ```
+
+## Props
+
+<!-- This generated automatically -->
+
+### `Group`
+
+No props to show
