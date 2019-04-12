@@ -498,7 +498,7 @@ ${rows || "No props to show"}`;
     .join("");
 
   return `
-<!-- This generated automatically -->
+<!-- Automatically generated -->
   
 ${content}`;
 }

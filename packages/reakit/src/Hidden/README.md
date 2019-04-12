@@ -42,7 +42,7 @@ return <Example />;
 
 ## Props
 
-<!-- This generated automatically -->
+<!-- Automatically generated -->
 
 ### `useHiddenState`
 

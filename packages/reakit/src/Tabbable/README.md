@@ -20,7 +20,7 @@ function Example() {
 
 ## Props
 
-<!-- This generated automatically -->
+<!-- Automatically generated -->
 
 ### `Tabbable`
 
