@@ -356,7 +356,7 @@ function getModuleName(node) {
  */
 function getDeclaration(symbol) {
   const declarations = symbol.getDeclarations();
-  return declarations[declarations.length - 1];
+  return declarations[0];
 }
 
 /**
@@ -407,7 +407,7 @@ function getPropType(rootPath, prop) {
   const declaration = getDeclaration(prop);
   let type = declaration
     .getType()
-    .getText()
+    .getText(undefined, 8388608)
     .replace(/import\([^)]+\)\./g, "");
 
   if (type.length > 40) {

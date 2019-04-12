@@ -151,11 +151,11 @@ function Example() {
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_loop`** | <code>boolean</code> | If enabled, the next item after the last one will be the first one. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
+| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
 | **`unstable_flip`** | <code>boolean &#124; undefined</code> | Whether or not flip the popover. |
 | **`unstable_shift`** | <code>boolean &#124; undefined</code> | Whether or not shift the popover. |
 | **`unstable_gutter`** | <code>number &#124; undefined</code> | Offset between the reference and the popover. |
-| **`unstable_values`** | <code>Record<string, any></code> | TODO: Description |
+| **`unstable_values`** | <code>{ [x: string]: any; }</code> | TODO: Description |
 
 ### `Menu`
 
@@ -167,9 +167,9 @@ function Example() {
 | **`hideOnEsc`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by pressing `Escape`. |
 | **`hideOnClickOutside`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by clicking outside it. |
 | **`preventBodyScroll`** | <code>boolean &#124; undefined</code> | When enabled, user can't scroll on body when the dialog is visible. This option doesn't work if the dialog isn't modal. |
-| **`unstable_initialFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog shows. When not set, the first tabbable element within the dialog will be used. `autoFocusOnShow` disables it. |
-| **`unstable_finalFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog hides. When not set, the disclosure component will be used. `autoFocusOnHide` disables it. |
-| **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
+| **`unstable_initialFocusRef`** | <code>RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog shows. When not set, the first tabbable element within the dialog will be used. `autoFocusOnShow` disables it. |
+| **`unstable_finalFocusRef`** | <code>RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog hides. When not set, the disclosure component will be used. `autoFocusOnHide` disables it. |
+| **`unstable_popoverRef`** | <code>RefObject<HTMLElement &#124; null></code> | The popover element. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |
@@ -182,8 +182,8 @@ function Example() {
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
-| **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
+| **`unstable_referenceRef`** | <code>RefObject<HTMLElement &#124; null></code> | The reference element. |
+| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
@@ -210,7 +210,7 @@ No props to show
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
+| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 
 ### `MenuItemCheckbox`
@@ -234,9 +234,9 @@ No props to show
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
+| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`unstable_values`** | <code>Record<string, any></code> | TODO: Description |
+| **`unstable_values`** | <code>{ [x: string]: any; }</code> | TODO: Description |
 | **`unstable_update`** | <code>(name: string, value?: any) => void</code> | TODO: Description |
 | **`name`** | <code>string</code> | TODO: Description |
 
@@ -258,12 +258,12 @@ No props to show
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
 | **`currentValue`** | <code>any</code> | The `value` attribute of the current checked radio. |
-| **`setValue`** | <code>React.Dispatch<any></code> | Changes the `currentValue` state. |
+| **`setValue`** | <code>(value: any) => void</code> | Changes the `currentValue` state. |
 | **`value`** | <code>any</code> | Same as the `value` attribute. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Same as the `checked` attribute. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
+| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`unstable_values`** | <code>Record<string, any></code> | TODO: Description |
+| **`unstable_values`** | <code>{ [x: string]: any; }</code> | TODO: Description |
 | **`unstable_update`** | <code>(name: string, value?: any) => void</code> | TODO: Description |
 | **`name`** | <code>string</code> | TODO: Description |
 

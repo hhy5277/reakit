@@ -1,5 +1,5 @@
 import * as React from "react";
-import Popper, { Placement } from "popper.js";
+import Popper from "popper.js";
 import { SealedInitialState, useSealedState } from "../__utils/useSealedState";
 import {
   DialogState,
@@ -8,6 +8,23 @@ import {
   useDialogState
 } from "../Dialog/DialogState";
 import { Keys } from "../__utils/types";
+
+type Placement =
+  | "auto-start"
+  | "auto"
+  | "auto-end"
+  | "top-start"
+  | "top"
+  | "top-end"
+  | "right-start"
+  | "right"
+  | "right-end"
+  | "bottom-end"
+  | "bottom"
+  | "bottom-start"
+  | "left-end"
+  | "left"
+  | "left-start";
 
 export type PopoverState = DialogState & {
   /**

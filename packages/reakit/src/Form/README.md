@@ -137,7 +137,7 @@ function Example() {
 | **`values`** | <code>V</code> | TODO: Description |
 | **`update`** | <code>Update<V></code> | TODO: Description |
 | **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
-| **`touched`** | <code>DeepPartial<DeepMap<V, boolean>></code> | TODO: Description |
+| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
 | **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 | **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormCheckbox.ts#L32) | TODO: Description |
@@ -147,7 +147,7 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | <code>DeepPartial<DeepMap<V, boolean>></code> | TODO: Description |
+| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
 | **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
@@ -161,7 +161,7 @@ function Example() {
 | **`values`** | <code>V</code> | TODO: Description |
 | **`update`** | <code>Update<V></code> | TODO: Description |
 | **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
-| **`touched`** | <code>DeepPartial<DeepMap<V, boolean>></code> | TODO: Description |
+| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
 | **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
@@ -179,7 +179,7 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | <code>DeepPartial<DeepMap<V, boolean>></code> | TODO: Description |
+| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
 | **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
 | **`messages`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L47) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
@@ -194,7 +194,7 @@ function Example() {
 | **`values`** | <code>V</code> | TODO: Description |
 | **`push`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L98-L101) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
-| **`value`** | <code>ArrayValue<DeepPathValue<V, P>></code> | TODO: Description |
+| **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormPushButton.ts#L22) | TODO: Description |
 
 ### `FormRadio`
 
@@ -204,14 +204,14 @@ function Example() {
 | **`update`** | <code>Update<V></code> | TODO: Description |
 | **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
-| **`value`** | <code>DeepPathValue<V, P></code> | TODO: Description |
+| **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormRadio.ts#L23) | TODO: Description |
 
 ### `FormRadioGroup`
 
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | <code>DeepPartial<DeepMap<V, boolean>></code> | TODO: Description |
+| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
 | **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 

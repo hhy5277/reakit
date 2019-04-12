@@ -58,7 +58,7 @@ function Example() {
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
 | **`currentValue`** | <code>any</code> | The `value` attribute of the current checked radio. |
-| **`setValue`** | <code>React.Dispatch<any></code> | Changes the `currentValue` state. |
+| **`setValue`** | <code>(value: any) => void</code> | Changes the `currentValue` state. |
 | **`value`** | <code>any</code> | Same as the `value` attribute. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Same as the `checked` attribute. |
 

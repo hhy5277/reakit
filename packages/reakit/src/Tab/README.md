@@ -112,7 +112,7 @@ function Example() {
 | **`unstable_previous`** | <code>() => void</code> | Moves focus onto the previous element. |
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
-| **`stopId`** | <code>string</code> | TODO: Description |
+| **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
 | **`unstable_manual`** | <code>boolean</code> | TODO: Description |
 | **`unstable_selectedId`** | <code>string &#124; null</code> | TODO: Description |
 | **`unstable_select`** | <code>(id: string &#124; null) => void</code> | TODO: Description |
