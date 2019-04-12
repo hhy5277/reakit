@@ -164,12 +164,12 @@ function Example() {
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`modal`** | <code>boolean &#124; undefined</code> | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is<br>trapped within the dialog. |
+| **`modal`** | <code>boolean &#124; undefined</code> | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is trapped within the dialog. |
 | **`hideOnEsc`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by pressing `Escape`. |
 | **`hideOnClickOutside`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by clicking outside it. |
-| **`preventBodyScroll`** | <code>boolean &#124; undefined</code> | When enabled, user can't scroll on body when the dialog is visible.<br>This option doesn't work if the dialog isn't modal. |
-| **`unstable_initialFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog shows.<br>When not set, the first tabbable element within the dialog will be used.<br>`autoFocusOnShow` disables it. |
-| **`unstable_finalFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog hides.<br>When not set, the disclosure component will be used.<br>`autoFocusOnHide` disables it. |
+| **`preventBodyScroll`** | <code>boolean &#124; undefined</code> | When enabled, user can't scroll on body when the dialog is visible. This option doesn't work if the dialog isn't modal. |
+| **`unstable_initialFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog shows. When not set, the first tabbable element within the dialog will be used. `autoFocusOnShow` disables it. |
+| **`unstable_finalFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog hides. When not set, the disclosure component will be used. `autoFocusOnHide` disables it. |
 | **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
@@ -181,7 +181,7 @@ function Example() {
 |------|------|-------------|
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
-| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
 | **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
@@ -203,7 +203,7 @@ function Example() {
 |------|------|-------------|
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
-| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
@@ -224,10 +224,10 @@ function Example() {
 |------|------|-------------|
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
-| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
-| **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox.<br>If checkboxes that share this state have defined a `value` prop, it's<br>going to be an array. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
+| **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox. If checkboxes that share this state have defined a `value` prop, it's going to be an array. |
 | **`setValue`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Checkbox/CheckboxState.ts#L18) | Sets `currentValue`. |
-| **`value`** | <code>any</code> | Checkbox's value is going to be used when multiple checkboxes share the<br>same state. Checking a checkbox with value will add it to the state<br>array. |
+| **`value`** | <code>any</code> | Checkbox's value is going to be used when multiple checkboxes share the same state. Checking a checkbox with value will add it to the state array. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Checkbox's checked state. If present, it's used instead of currentValue. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
@@ -252,7 +252,7 @@ function Example() {
 |------|------|-------------|
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
-| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
@@ -279,7 +279,7 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
-| **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Separator's context orientation.<br>The actual separator's oriention will be flipped based on this prop.<br>So a `"vertical"` orientation means that the separator will have a<br>`"horizontal"` orientation. |
+| **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Separator's context orientation. The actual separator's oriention will be flipped based on this prop. So a `"vertical"` orientation means that the separator will have a `"horizontal"` orientation. |
 
 ### `StaticMenu`
 

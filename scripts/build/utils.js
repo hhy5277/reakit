@@ -473,7 +473,10 @@ function getPropTypesRow(prop) {
     ? prop.type
     : `<code>${prop.type.replace(/\|/g, "&#124;")}</code>`;
   // replace line breaks
-  const description = prop.description.replace(/\n/g, "<br>");
+  const description = prop.description
+    .replace(/\n\n/g, "<br>")
+    .replace(/\n(\s+)/g, "<br>$1")
+    .replace(/\n/g, " ");
 
   return `| ${name} | ${type} | ${description} |`;
 }
