@@ -132,40 +132,40 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 
 ### `Dialog`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | `boolean` | Whether it's visible or not. |
-| **`show`** | `() => void` | Changes the `visible` state to `true` |
-| **`hide`** | `() => void` | Changes the `visible` state to `false` |
-| **`toggle`** | `() => void` | Toggles the `visible` state |
-| **`modal`** | `boolean | undefined` | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is<br>trapped within the dialog. |
-| **`hideOnEsc`** | `boolean | undefined` | When enabled, user can hide the dialog by pressing `Escape`. |
-| **`hideOnClickOutside`** | `boolean | undefined` | When enabled, user can hide the dialog by clicking outside it. |
-| **`preventBodyScroll`** | `boolean | undefined` | When enabled, user can't scroll on body when the dialog is visible.<br>This option doesn't work if the dialog isn't modal. |
-| **`unstable_initialFocusRef`** | `React.RefObject<HTMLElement> | undefined` | The element that will be focused when the dialog shows.<br>When not set, the first tabbable element within the dialog will be used.<br>`autoFocusOnShow` disables it. |
-| **`unstable_finalFocusRef`** | `React.RefObject<HTMLElement> | undefined` | The element that will be focused when the dialog hides.<br>When not set, the disclosure component will be used.<br>`autoFocusOnHide` disables it. |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
+| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
+| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
+| **`modal`** | <code>boolean &#124; undefined</code> | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is<br>trapped within the dialog. |
+| **`hideOnEsc`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by pressing `Escape`. |
+| **`hideOnClickOutside`** | <code>boolean &#124; undefined</code> | When enabled, user can hide the dialog by clicking outside it. |
+| **`preventBodyScroll`** | <code>boolean &#124; undefined</code> | When enabled, user can't scroll on body when the dialog is visible.<br>This option doesn't work if the dialog isn't modal. |
+| **`unstable_initialFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog shows.<br>When not set, the first tabbable element within the dialog will be used.<br>`autoFocusOnShow` disables it. |
+| **`unstable_finalFocusRef`** | <code>React.RefObject<HTMLElement> &#124; undefined</code> | The element that will be focused when the dialog hides.<br>When not set, the disclosure component will be used.<br>`autoFocusOnHide` disables it. |
 
 ### `DialogBackdrop`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | `boolean` | Whether it's visible or not. |
-| **`show`** | `() => void` | Changes the `visible` state to `true` |
-| **`hide`** | `() => void` | Changes the `visible` state to `false` |
-| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
+| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
+| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
 
 ### `DialogDisclosure`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`disabled`** | `boolean | undefined` | Same as the HTML attribute. |
-| **`unstable_focusable`** | `boolean | undefined` | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
-| **`unstable_clickKeys`** | `string[] | undefined` | Keyboard keys to trigger click. |
-| **`visible`** | `boolean` | Whether it's visible or not. |
-| **`show`** | `() => void` | Changes the `visible` state to `true` |
-| **`hide`** | `() => void` | Changes the `visible` state to `false` |
-| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_clickKeys`** | <code>string[] &#124; undefined</code> | Keyboard keys to trigger click. |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
+| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
+| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |

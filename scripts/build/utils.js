@@ -469,7 +469,9 @@ function createPropTypeObject(rootPath, prop) {
 function getPropTypesRow(prop) {
   const name = `**\`${prop.name}\`**`;
   // consider "source" links
-  const type = prop.type.startsWith("[") ? prop.type : `\`${prop.type}\``;
+  const type = prop.type.startsWith("[")
+    ? prop.type
+    : `<code>${prop.type.replace(/\|/g, "&#124;")}</code>`;
   // replace line breaks
   const description = prop.description.replace(/\n/g, "<br>");
 

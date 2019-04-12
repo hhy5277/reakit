@@ -48,25 +48,25 @@ return <Example />;
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | `boolean` | Whether it's visible or not. |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 
 ### `Hidden`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | `boolean` | Whether it's visible or not. |
-| **`show`** | `() => void` | Changes the `visible` state to `true` |
-| **`hide`** | `() => void` | Changes the `visible` state to `false` |
-| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
+| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
+| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
 
 ### `HiddenDisclosure`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`disabled`** | `boolean | undefined` | Same as the HTML attribute. |
-| **`unstable_focusable`** | `boolean | undefined` | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
-| **`unstable_clickKeys`** | `string[] | undefined` | Keyboard keys to trigger click. |
-| **`visible`** | `boolean` | Whether it's visible or not. |
-| **`show`** | `() => void` | Changes the `visible` state to `true` |
-| **`hide`** | `() => void` | Changes the `visible` state to `false` |
-| **`toggle`** | `() => void` | Toggles the `visible` state |
+| **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_clickKeys`** | <code>string[] &#124; undefined</code> | Keyboard keys to trigger click. |
+| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
+| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
+| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |

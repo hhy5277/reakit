@@ -55,16 +55,16 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`currentValue`** | `boolean | any[] | "indeterminate"` | Stores the state of the checkbox.<br>If checkboxes that share this state have defined a `value` prop, it's<br>going to be an array. |
+| **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox.<br>If checkboxes that share this state have defined a `value` prop, it's<br>going to be an array. |
 
 ### `Checkbox`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`disabled`** | `boolean | undefined` | Same as the HTML attribute. |
-| **`unstable_focusable`** | `boolean | undefined` | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
-| **`unstable_clickKeys`** | `string[] | undefined` | Keyboard keys to trigger click. |
-| **`currentValue`** | `boolean | any[] | "indeterminate"` | Stores the state of the checkbox.<br>If checkboxes that share this state have defined a `value` prop, it's<br>going to be an array. |
+| **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
+| **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`.<br>In this case, only `aria-disabled` will be set. |
+| **`unstable_clickKeys`** | <code>string[] &#124; undefined</code> | Keyboard keys to trigger click. |
+| **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox.<br>If checkboxes that share this state have defined a `value` prop, it's<br>going to be an array. |
 | **`setValue`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Checkbox/CheckboxState.ts#L18) | Sets `currentValue`. |
-| **`value`** | `any` | Checkbox's value is going to be used when multiple checkboxes share the<br>same state. Checking a checkbox with value will add it to the state<br>array. |
-| **`checked`** | `boolean | undefined` | Checkbox's checked state. If present, it's used instead of currentValue. |
+| **`value`** | <code>any</code> | Checkbox's value is going to be used when multiple checkboxes share the<br>same state. Checking a checkbox with value will add it to the state<br>array. |
+| **`checked`** | <code>boolean &#124; undefined</code> | Checkbox's checked state. If present, it's used instead of currentValue. |
