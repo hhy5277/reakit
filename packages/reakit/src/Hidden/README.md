@@ -54,14 +54,12 @@ return <Example />;
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 
 ### `HiddenDisclosure`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |

@@ -86,14 +86,12 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 
 ### `ToolbarItem`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
@@ -112,5 +110,4 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Separator's context orientation. The actual separator's oriention will be flipped based on this prop. So a `"vertical"` orientation means that the separator will have a `"horizontal"` orientation. |

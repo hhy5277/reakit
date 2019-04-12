@@ -161,7 +161,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 | **`modal`** | <code>boolean &#124; undefined</code> | Toggles Dialog's `modal` state.<br>  - Non-modal: `preventBodyScroll` doesn't work and focus is free.<br>  - Modal: `preventBodyScroll` is automatically enabled and focus is trapped within the dialog. |
@@ -179,7 +178,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
@@ -193,15 +191,12 @@ function Example() {
 
 ### `MenuGroup`
 
-| Name | Type | Description |
-|------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
+No props to show
 
 ### `MenuItem`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
@@ -222,7 +217,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox. If checkboxes that share this state have defined a `value` prop, it's going to be an array. |
@@ -250,7 +244,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
@@ -278,14 +271,12 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Separator's context orientation. The actual separator's oriention will be flipped based on this prop. So a `"vertical"` orientation means that the separator will have a `"horizontal"` orientation. |
 
 ### `StaticMenu`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |

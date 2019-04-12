@@ -61,7 +61,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox. If checkboxes that share this state have defined a `value` prop, it's going to be an array. |

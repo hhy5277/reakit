@@ -49,7 +49,6 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
 
@@ -57,14 +56,12 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`placement`** | <code>default.Placement</code> | Actual `placement`. |
 
 ### `TooltipReference`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
 | **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
