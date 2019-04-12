@@ -49,49 +49,22 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
+| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
-| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
-| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
-| **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
 | **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
-| **`unstable_arrowRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The arrow element. |
-| **`unstable_popoverStyles`** | <code>Partial<CSSStyleDeclaration></code> | Popover styles. |
-| **`unstable_arrowStyles`** | <code>Partial<CSSStyleDeclaration></code> | Arrow styles. |
-| **`unstable_originalPlacement`** | <code>default.Placement</code> | `placement` passed to the hook. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
-| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |
 
 ### `TooltipArrow`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
-| **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
-| **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
-| **`unstable_arrowRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The arrow element. |
-| **`unstable_popoverStyles`** | <code>Partial<CSSStyleDeclaration></code> | Popover styles. |
-| **`unstable_arrowStyles`** | <code>Partial<CSSStyleDeclaration></code> | Arrow styles. |
-| **`unstable_originalPlacement`** | <code>default.Placement</code> | `placement` passed to the hook. |
+| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`placement`** | <code>default.Placement</code> | Actual `placement`. |
-| **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
-| **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
-| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |
 
 ### `TooltipReference`
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`visible`** | <code>boolean</code> | Whether it's visible or not. |
+| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
 | **`unstable_referenceRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The reference element. |
-| **`unstable_popoverRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The popover element. |
-| **`unstable_arrowRef`** | <code>React.RefObject<HTMLElement &#124; null></code> | The arrow element. |
-| **`unstable_popoverStyles`** | <code>Partial<CSSStyleDeclaration></code> | Popover styles. |
-| **`unstable_arrowStyles`** | <code>Partial<CSSStyleDeclaration></code> | Arrow styles. |
-| **`unstable_originalPlacement`** | <code>default.Placement</code> | `placement` passed to the hook. |
-| **`placement`** | <code>default.Placement</code> | Actual `placement`. |
 | **`show`** | <code>() => void</code> | Changes the `visible` state to `true` |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
-| **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
-| **`place`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L48) | Change the `placement` state. |

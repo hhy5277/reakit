@@ -7,7 +7,6 @@ import { Keys } from "../__utils/types";
 export type BoxOptions = {
   /**
    * Options passed to `reakit-system-*`
-   * @private
    */
   unstable_system?: unknown;
 };

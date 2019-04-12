@@ -20,7 +20,7 @@ import { useHideOnFocusOutside } from "./__utils/useHideOnFocusOutside";
 import { useDialogState, DialogStateReturn } from "./DialogState";
 
 export type DialogOptions = HiddenOptions &
-  Partial<DialogStateReturn> &
+  Pick<Partial<DialogStateReturn>, "hide"> &
   Pick<DialogStateReturn, "unstable_hiddenId"> & {
     /**
      * Toggles Dialog's `modal` state.
@@ -132,7 +132,7 @@ export function useDialog(
   return htmlProps;
 }
 
-const keys: Keys<DialogOptions> = [
+const keys: Keys<DialogStateReturn & DialogOptions> = [
   ...useHidden.__keys,
   ...useDialogState.__keys,
   "modal",

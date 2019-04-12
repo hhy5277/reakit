@@ -16,27 +16,31 @@ export type PopoverState = DialogState & {
   unstable_referenceRef: React.RefObject<HTMLElement | null>;
   /**
    * The popover element.
+   * @Private
    */
   unstable_popoverRef: React.RefObject<HTMLElement | null>;
   /**
    * The arrow element.
+   * @private
    */
   unstable_arrowRef: React.RefObject<HTMLElement | null>;
   /**
    * Popover styles.
+   * @private
    */
   unstable_popoverStyles: Partial<CSSStyleDeclaration>;
   /**
    * Arrow styles.
+   * @private
    */
   unstable_arrowStyles: Partial<CSSStyleDeclaration>;
   /**
    * `placement` passed to the hook.
+   * @private
    */
   unstable_originalPlacement: Placement;
   /**
    * Actual `placement`.
-   * @default "bottom"
    */
   placement: Placement;
 };
@@ -52,17 +56,14 @@ export type PopoverInitialState = DialogInitialState &
   Partial<Pick<PopoverState, "placement">> & {
     /**
      * Whether or not flip the popover.
-     * @default true
      */
     unstable_flip?: boolean;
     /**
      * Whether or not shift the popover.
-     * @default true
      */
     unstable_shift?: boolean;
     /**
      * Offset between the reference and the popover.
-     * @default 12
      */
     unstable_gutter?: number;
   };

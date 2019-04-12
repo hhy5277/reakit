@@ -29,4 +29,6 @@ function Example() {
 
 ### `Group`
 
-No props to show
+| Name | Type | Description |
+|------|------|-------------|
+| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |

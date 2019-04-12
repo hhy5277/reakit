@@ -43,4 +43,6 @@ function Example() {
 
 ### `Box`
 
-No props to show
+| Name | Type | Description |
+|------|------|-------------|
+| **`unstable_system`** | <code>unknown</code> | Options passed to `reakit-system-*` |
