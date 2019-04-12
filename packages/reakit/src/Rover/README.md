@@ -77,7 +77,7 @@ function Example() {
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
-| **`unstable_register`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Rover/RoverState.ts#L40) | Registers the element ID and ref in the roving tab index list. |
+| **`unstable_register`** | <code>(id: string, ref: RefObject<HTMLElement>) => void</code> | Registers the element ID and ref in the roving tab index list. |
 | **`unstable_unregister`** | <code>(id: string) => void</code> | Unregisters the roving item. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |
 | **`unstable_next`** | <code>() => void</code> | Moves focus onto the next element. |

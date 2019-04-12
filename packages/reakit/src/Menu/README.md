@@ -151,7 +151,7 @@ function Example() {
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_loop`** | <code>boolean</code> | If enabled, the next item after the last one will be the first one. |
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`unstable_flip`** | <code>boolean &#124; undefined</code> | Whether or not flip the popover. |
 | **`unstable_shift`** | <code>boolean &#124; undefined</code> | Whether or not shift the popover. |
 | **`unstable_gutter`** | <code>number &#124; undefined</code> | Offset between the reference and the popover. |
@@ -183,7 +183,7 @@ function Example() {
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
 | **`toggle`** | <code>() => void</code> | Toggles the `visible` state |
 | **`unstable_referenceRef`** | <code>RefObject<HTMLElement &#124; null></code> | The reference element. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
@@ -203,14 +203,14 @@ No props to show
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |
-| **`unstable_register`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Rover/RoverState.ts#L40) | Registers the element ID and ref in the roving tab index list. |
+| **`unstable_register`** | <code>(id: string, ref: RefObject<HTMLElement>) => void</code> | Registers the element ID and ref in the roving tab index list. |
 | **`unstable_unregister`** | <code>(id: string) => void</code> | Unregisters the roving item. |
 | **`unstable_next`** | <code>() => void</code> | Moves focus onto the next element. |
 | **`unstable_previous`** | <code>() => void</code> | Moves focus onto the previous element. |
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 
 ### `MenuItemCheckbox`
@@ -220,21 +220,21 @@ No props to show
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox. If checkboxes that share this state have defined a `value` prop, it's going to be an array. |
-| **`setValue`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Checkbox/CheckboxState.ts#L18) | Sets `currentValue`. |
+| **`setValue`** | <code>(value: SetStateAction<boolean &#124; any[] &#124; "indeterminate">) => void</code> | Sets `currentValue`. |
 | **`value`** | <code>any</code> | Checkbox's value is going to be used when multiple checkboxes share the same state. Checking a checkbox with value will add it to the state array. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Checkbox's checked state. If present, it's used instead of currentValue. |
 | **`orientation`** | <code>"horizontal" &#124; "vertical" &#124; undefined</code> | Defines the orientation of the rover list. |
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |
-| **`unstable_register`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Rover/RoverState.ts#L40) | Registers the element ID and ref in the roving tab index list. |
+| **`unstable_register`** | <code>(id: string, ref: RefObject<HTMLElement>) => void</code> | Registers the element ID and ref in the roving tab index list. |
 | **`unstable_unregister`** | <code>(id: string) => void</code> | Unregisters the roving item. |
 | **`unstable_next`** | <code>() => void</code> | Moves focus onto the next element. |
 | **`unstable_previous`** | <code>() => void</code> | Moves focus onto the previous element. |
 | **`unstable_first`** | <code>() => void</code> | Moves focus onto the first element. |
 | **`unstable_last`** | <code>() => void</code> | Moves focus onto the last element. |
 | **`stopId`** | <code>string &#124; undefined</code> | Element ID. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 | **`unstable_values`** | <code>{ [x: string]: any; }</code> | TODO: Description |
 | **`unstable_update`** | <code>(name: string, value?: any) => void</code> | TODO: Description |
@@ -250,7 +250,7 @@ No props to show
 | **`unstable_currentId`** | <code>string &#124; null</code> | The current focused element ID. |
 | **`unstable_stops`** | <code>Stop[]</code> | A list of element refs and IDs of the roving items. |
 | **`unstable_move`** | <code>(id: string &#124; null) => void</code> | Moves focus onto a given element ID. |
-| **`unstable_register`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Rover/RoverState.ts#L40) | Registers the element ID and ref in the roving tab index list. |
+| **`unstable_register`** | <code>(id: string, ref: RefObject<HTMLElement>) => void</code> | Registers the element ID and ref in the roving tab index list. |
 | **`unstable_unregister`** | <code>(id: string) => void</code> | Unregisters the roving item. |
 | **`unstable_next`** | <code>() => void</code> | Moves focus onto the next element. |
 | **`unstable_previous`** | <code>() => void</code> | Moves focus onto the previous element. |
@@ -261,7 +261,7 @@ No props to show
 | **`setValue`** | <code>(value: any) => void</code> | Changes the `currentValue` state. |
 | **`value`** | <code>any</code> | Same as the `value` attribute. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Same as the `checked` attribute. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`hide`** | <code>() => void</code> | Changes the `visible` state to `false` |
 | **`unstable_values`** | <code>{ [x: string]: any; }</code> | TODO: Description |
 | **`unstable_update`** | <code>(name: string, value?: any) => void</code> | TODO: Description |

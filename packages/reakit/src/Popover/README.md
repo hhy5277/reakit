@@ -102,7 +102,7 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`visible`** | <code>boolean</code> | Whether it's visible or not. |
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 | **`unstable_flip`** | <code>boolean &#124; undefined</code> | Whether or not flip the popover. |
 | **`unstable_shift`** | <code>boolean &#124; undefined</code> | Whether or not shift the popover. |
 | **`unstable_gutter`** | <code>number &#124; undefined</code> | Offset between the reference and the popover. |
@@ -125,7 +125,7 @@ function Example() {
 
 | Name | Type | Description |
 |------|------|-------------|
-| **`placement`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Popover/PopoverState.ts#L62) | Actual `placement`. |
+| **`placement`** | <code>"auto-start" &#124; "auto" &#124; "auto-end" &#124; "top-start" &#124; "top" &#124; "top-end" &#124; "right-start" &#124; "right" &#124; "right-end" &#124; "bottom-end" &#124; "bottom" &#124; "bottom-start" &#124; "left-end" &#124; "left" &#124; "left-start"</code> | Actual `placement`. |
 
 ### `PopoverBackdrop`
 

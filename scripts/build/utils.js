@@ -402,25 +402,25 @@ function getProps(node) {
  * @param {import("ts-morph").Symbol} prop
  */
 function getPropType(rootPath, prop) {
-  const pkg = getPackage(rootPath);
-  const repository = pkg.repository.replace(/(\/tree\/.+|\/)$/, "");
+  // const pkg = getPackage(rootPath);
+  // const repository = pkg.repository.replace(/(\/tree\/.+|\/)$/, "");
   const declaration = getDeclaration(prop);
-  let type = declaration
+  const type = declaration
     .getType()
     .getText(undefined, 8388608)
     .replace(/import\([^)]+\)\./g, "");
 
-  if (type.length > 40) {
-    const path = declaration
-      .getSourceFile()
-      .getFilePath()
-      .replace(resolve(rootPath, "../../"), "");
-    const startLine = declaration.getStartLineNumber();
-    const endLine = declaration.getEndLineNumber();
-    const linesHash =
-      startLine === endLine ? `#L${startLine}` : `#L${startLine}-L${endLine}`;
-    type = `[source](${repository}/tree/master${path}${linesHash})`;
-  }
+  // if (type.length > 40) {
+  //   const path = declaration
+  //     .getSourceFile()
+  //     .getFilePath()
+  //     .replace(resolve(rootPath, "../../"), "");
+  //   const startLine = declaration.getStartLineNumber();
+  //   const endLine = declaration.getEndLineNumber();
+  //   const linesHash =
+  //     startLine === endLine ? `#L${startLine}` : `#L${startLine}-L${endLine}`;
+  //   type = `[source](${repository}/tree/master${path}${linesHash})`;
+  // }
   return type;
 }
 

@@ -115,8 +115,8 @@ function Example() {
 | **`validateOnChange`** | <code>boolean &#124; undefined</code> | TODO: Description |
 | **`resetOnSubmitSucceed`** | <code>boolean &#124; undefined</code> | TODO: Description |
 | **`resetOnUnmount`** | <code>boolean &#124; undefined</code> | TODO: Description |
-| **`onValidate`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L130) | TODO: Description |
-| **`onSubmit`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L134) | TODO: Description |
+| **`onValidate`** | <code>((values: V) => ValidateReturn<V>) &#124; undefined</code> | TODO: Description |
+| **`onSubmit`** | <code>((values: V) => ValidateReturn<V>) &#124; undefined</code> | TODO: Description |
 
 ### `Form`
 
@@ -129,26 +129,26 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`currentValue`** | <code>boolean &#124; any[] &#124; "indeterminate"</code> | Stores the state of the checkbox. If checkboxes that share this state have defined a `value` prop, it's going to be an array. |
-| **`setValue`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Checkbox/CheckboxState.ts#L18) | Sets `currentValue`. |
+| **`setValue`** | <code>(value: SetStateAction<boolean &#124; any[] &#124; "indeterminate">) => void</code> | Sets `currentValue`. |
 | **`disabled`** | <code>boolean &#124; undefined</code> | Same as the HTML attribute. |
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`checked`** | <code>boolean &#124; undefined</code> | Checkbox's checked state. If present, it's used instead of currentValue. |
 | **`baseId`** | <code>string</code> | TODO: Description |
 | **`values`** | <code>V</code> | TODO: Description |
 | **`update`** | <code>Update<V></code> | TODO: Description |
-| **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
-| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
-| **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
+| **`blur`** | <code><P extends DeepPath<V, P>>(name: P) => void</code> | TODO: Description |
+| **`touched`** | <code>{ [P in keyof DeepMap<V, boolean>]?: (DeepMap<V, boolean>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, boolean>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, boolean>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`errors`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
-| **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormCheckbox.ts#L32) | TODO: Description |
+| **`value`** | <code>ArrayValue<DeepPathValue<V, P>> &#124; undefined</code> | TODO: Description |
 
 ### `FormGroup`
 
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
-| **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
+| **`touched`** | <code>{ [P in keyof DeepMap<V, boolean>]?: (DeepMap<V, boolean>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, boolean>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, boolean>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`errors`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
 ### `FormInput`
@@ -160,9 +160,9 @@ function Example() {
 | **`baseId`** | <code>string</code> | TODO: Description |
 | **`values`** | <code>V</code> | TODO: Description |
 | **`update`** | <code>Update<V></code> | TODO: Description |
-| **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
-| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
-| **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
+| **`blur`** | <code><P extends DeepPath<V, P>>(name: P) => void</code> | TODO: Description |
+| **`touched`** | <code>{ [P in keyof DeepMap<V, boolean>]?: (DeepMap<V, boolean>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, boolean>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, boolean>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`errors`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
 ### `FormLabel`
@@ -179,9 +179,9 @@ function Example() {
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
-| **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
-| **`messages`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L47) | TODO: Description |
+| **`touched`** | <code>{ [P in keyof DeepMap<V, boolean>]?: (DeepMap<V, boolean>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, boolean>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, boolean>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`errors`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`messages`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
 ### `FormPushButton`
@@ -192,9 +192,9 @@ function Example() {
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`baseId`** | <code>string</code> | TODO: Description |
 | **`values`** | <code>V</code> | TODO: Description |
-| **`push`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L98-L101) | TODO: Description |
+| **`push`** | <code><P extends DeepPath<V, P>>(name: P, value?: ArrayValue<DeepPathValue<V, P>> &#124; undefined) => void</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
-| **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormPushButton.ts#L22) | TODO: Description |
+| **`value`** | <code>DeepPathValue<V, P> extends (infer U)[] ? U : never</code> | TODO: Description |
 
 ### `FormRadio`
 
@@ -202,17 +202,17 @@ function Example() {
 |------|------|-------------|
 | **`values`** | <code>V</code> | TODO: Description |
 | **`update`** | <code>Update<V></code> | TODO: Description |
-| **`blur`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L94) | TODO: Description |
+| **`blur`** | <code><P extends DeepPath<V, P>>(name: P) => void</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
-| **`value`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormRadio.ts#L23) | TODO: Description |
+| **`value`** | <code>P extends DeepPathArray<V, P> ? DeepPathArrayValue<V, P> : P extends keyof V ? V[P] : any</code> | TODO: Description |
 
 ### `FormRadioGroup`
 
 | Name | Type | Description |
 |------|------|-------------|
 | **`baseId`** | <code>string</code> | TODO: Description |
-| **`touched`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L43) | TODO: Description |
-| **`errors`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L51) | TODO: Description |
+| **`touched`** | <code>{ [P in keyof DeepMap<V, boolean>]?: (DeepMap<V, boolean>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, boolean>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, boolean>[P]>) &#124; undefined; }</code> | TODO: Description |
+| **`errors`** | <code>{ [P in keyof DeepMap<V, string &#124; void &#124; null>]?: (DeepMap<V, string &#124; void &#124; null>[P] extends (infer U)[] ? DeepPartial<U>[] : DeepMap<V, string &#124; void &#124; null>[P] extends readonly (infer U)[] ? readonly DeepPartial<U>[] : DeepPartial<DeepMap<V, string &#124; ... 1 more ... &#124; null>[P]>) &#124; undefined; }</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 
 ### `FormRemoveButton`
@@ -223,7 +223,7 @@ function Example() {
 | **`unstable_focusable`** | <code>boolean &#124; undefined</code> | When an element is `disabled`, it may still be `focusable`. In this case, only `aria-disabled` will be set. |
 | **`baseId`** | <code>string</code> | TODO: Description |
 | **`values`** | <code>V</code> | TODO: Description |
-| **`remove`** | [source](https://github.com/reakit/reakit/tree/master/packages/reakit/src/Form/FormState.ts#L105) | TODO: Description |
+| **`remove`** | <code><P extends DeepPath<V, P>>(name: P, index: number) => void</code> | TODO: Description |
 | **`name`** | <code>P</code> | TODO: Description |
 | **`index`** | <code>number</code> | TODO: Description |
 
